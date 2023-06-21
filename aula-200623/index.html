@@ -1,0 +1,104 @@
+<!--
+HTML -> HyperText Markup Language (Linguagem Marcação de Hiper Texto)
+    *Tag -> é uma determinada marcação que especifica um componente na página 
+    *Atributo -> é uma caracteristica que atribuimos a uma tag, componente da página. Dentro da tag <tag atributo = "valor do atributo">,
+pode ser usado mais de um atribudo em uma tag. Lang dentro da tag html é um atributo, por exemplo.
+    *"<nome-da-tag> escolpo </nome-da-tag>
+    *< e > são os conchetes angulares"
+    *"meta tags" são informações aplicadas sobre a página, mas que não aparecem visualmente na página, porém é utilizada
+pelos navegadores na hora de mostrar as páginas aos usuários. Definem as configurações da nossa página. Sempre dentro do head.
+
+TIPOS DE TÍTULO E SUBTÍTULOS:
+h1 é o título principal, utilizado geralmente só uma vez, pois é utilizado como título principal
+
+
+ATALHOS:
+Ctrl + s = salvar
+Ctrl + z = desfazer
+ctrl + shift + z = refaz
+ctrl + f = faz uma busca e pode substituir valores
+ctrl + D = seleciona multiplas palavras e pode substituí-las
+ctrl + : = comenta a linha que está selecionada
+alt + z = quebra as linhas que ultrapassam a tela
+alt + pra cima ou para baixo = mover as linhas horizontalmente
+ctrl + D + lado + lado = da para apagar as palavras ao lado das selecionadas
+alt + click = multiplos cursores
+! + tab = gera a estrutura base do documento html
+ctrol + b = minimiza ou abre a barra lateral
+ctrol + ' ou ctrol + j = abrir o terminal
+tag + { frase de exemplo } = vai por a teg entre a frase selecionada
+
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR"> <!--tag de abertura-->
+    <head> <!--Aqui vai a cabeça da página-->
+        <meta name="author" content="Gabriela Sodré">
+        <meta name="description" content="Este site foi desenvolvido na primeira aula do HTML">
+        <meta charset="UTF-8"> <!-- Essa meta tag informa ao navegador que os caracteres utilizados nessa página são brasileiros, ou seja,
+            iremos utilizar acentos, ç, caracteres que são usados aqui mas não necessariamente em outros países-->    
+            <meta name="keywords" content="html, internet, meta tags"> <!-- informa ao navegador palavras chaves sobre o conteúdo dessa pagina,
+        assim quando o usuário procurar essas palavras, o navegador poderá mostrá-lo com facilidade a nossa página-->
+        <title>Site de Exemplo</title> 
+        <!--<title></title> aparece como informação da página no navegador o endereço do site-->
+    </head>
+
+    <body>
+        <!--Aqui é o corpo da página, que a gente vê na página: imagens, números, textos-->
+        <h2>Título de Exemplo 2 (H2)</h2>
+        <h1>Título de Exemplo 1 (H1)</h1> <!--Título-->
+        <h3>Título de Exemplo 3 (H3)</h3>
+        <h4>Título de Exemplo 4 (H4)</h4>
+        <h5>Título de Exemplo 5 (H5)</h5>
+        <h6>Título de Exemplo 6 (H6)</h6>
+        <p> A seguir, temos um exemplo de trecho de código em HTML para enfatizar um texto:
+            Texto de exemplo 
+            &rarr; &lt;html&gt; <!-- usando o < e > o navegador vai entender que isso é apenas o codigo e não um texto como queremos
+            então colocamos esses caracteres no lugar do < e > e assim aparecerá no  navegador quando queremos, "&rarr;" mostra uma seta-->
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            <hr> <!-- horizonatal row (linha horizontal)-->
+            Dolorem, voluptates, quos quis eligendi modi, quo accusamus ad vitae nihil veritatis repellendus labore ullam doloremque debitis repellat a ab laudantium vel?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <br> <!-- break row, usado para a quebra de linha automática, mas não é muito recomendada por não ser tão flexivel em outros dispositivos, por exemplo-->
+            Voluptatibus ipsa placeat cum provident sapiente minus, animi fugit eum, iste nam perspiciatis quaerat minima nesciunt molestiae doloribus sunt adipisci recusandae eaque.
+        </p>
+        <p>
+
+            <!-- <b>negrito</b> -->
+            <!-- <strong> negrito, (Aparência + mais relevante)</strong> -->
+            <!-- <i> itálico (Aparência)</i> -->
+            <!-- <em> itálico, (Aparência + relevante)</em> -->
+            <!-- <small> textos pequenos </small> -->
+            <!-- <u><i>exemplo</i></u> = u>i -->
+        
+            <b>Lorem</b> <!-- texto em negrito --> ipsum dolor sit amet <i>consectetur adipisicing elit</i> <!-- texto em itálico-->. Ex culpa fugiat, fugit dolor nobis deserunt tempora, dolore quo dolorum accusamus recusandae commodi, laboriosam aliquid ea enim impedit. Ullam, adipisci ducimus? <strong> Lorem </strong> <!-- strong é mais relevante que o <b> pois ajuda na acessibilidade --> ipsum dolor sit amet, <em>consectetur adipisicing elit</em>. Atque, doloribus eos repellat deleniti ut cum, <small>consequuntur earum velit perferendis illum consequatur</small> aliquid ex exercitationem odit aut, vitae facilis! Soluta, consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. <u>Id, esse iste nisi odit animi quod repudiandae aut sit omnis error voluptas officia quidem</u>.
+        </p>
+        <p>
+        <pre> <!-- Deixa o texto como está escrito, levando em consideração tab, parágrafos, alinhamento, quebra de linhas, tudo-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Laborum ullam numquam, ipsa nostrum soluta laboriosam ut iste quod at expedita animi voluptatum, error dolorum libero asperiores sunt quidem molestias distinction.
+            Vero ipsum dolores voluptatem beatae, quidem aut.
+        </pre>
+        <pre>
+            2<sup>2</sup> <!-- sobrescrito --> 
+            log<sub>2</sub> <!-- subscrito -->
+            log<sub>2</sub>4 = 2
+        </pre>
+        <code> <!-- aplicação de código como texto, não é executável -->
+            console.log(num);
+
+        </code>
+        </p>
+    </body>
+
+    
+</html> <!--tag de fechamento-->
+
