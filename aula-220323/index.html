@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 22/06/2023</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <!-- <a href=""></a> -> âncora ou link -->
+
+    <ul>
+        <li>
+            <a href="https://www.google.com.br/?hl=pt-BR"target="_blank"><strong>Google</strong></a>
+            <!-- target="_blank" Indica que vai abrir o link em uma nova aba em branco-->
+        
+        </li>
+        <li>
+            <a href="https://soulcode.com/">SoulCode</a>
+            <!-- Âncora é um link, href-->
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/pt-BR/">Mozilla Doc</a>
+        </li>
+        <li>
+            <a href="#lista-compras">Lista de Compras</a>
+        </li>
+        <li>
+            <a href="#receita-bolo">Receita de Bolo</a>
+        </li>
+        <li>
+            <a href="#lista-aninhada">Listas Aninhadas</a>
+        </li>
+        <li>
+            <a href="#lista-descrição">Lista de Descrição</a>
+            
+        </li>
+    </ul>
+
+<!-- id -> (atributo global), define uma identificação para um elemento -->
+
+
+    <h2 id="lista-compras">Lista de Compras</h2><!-- não importa a ordem da compra, por isso é uma lista não ordenada -->
+
+    <!-- <ul></ul> -> Listas não ordenadas -->
+    <!-- <li></li> -> indica um item da lista -->
+    <ul>
+        <li>Leite</li>
+        <li>Arroz Branco</li>
+        <li>Carne</li>
+        <li>Feijão</li>
+        <li>Tomate</li>
+    </ul>
+    <!-- <ol></ol> -> indica uma lista ordenada -->
+    <!-- <li></li> ítem da lista -->
+    
+    <h2 id="receita-bolo">Receita de Bolo</h2> <!--A ordem dos ingredientes importa-->
+    <ol>
+        <li>Reserve 500g de Farinha de Trigo</li>
+        <li>Reserve 1L de Leite</li>
+        <li>Reserve 2 ovos</li>
+        <li>Reserve 300g de açucar</li>
+        <li>Reserve 100g de margarina</li>
+        <li>Coloque o forno para aquecer em 180º C </li>
+        <li>Misture tudo em uma tigela e bata até ficar homogêneo</li>
+        <li>Coloque no forno por 30 min</li>
+    </ol>
+
+    <h2 id="lista-aninhada">Lista Aninhada</h2> <!-- Listas dentro de listas, odem ser ul ou ol, ou seja, podemos ter uma lista ordenada dentro de uma não ordenada, uma não ordenada dentro de uma ordenada ou tambem duas do mesmo tipo-->
+    <ul>
+        <li>    
+            Mamíferos
+            <ul>
+                <li>Vaca</li>
+                <li>Cachorro</li>
+                <li>Baleia</li>
+            </ul>
+        </li>
+        <li>    
+            Aves
+            <ul>
+                <li>Papagaio</li>
+                <li>Falcão</li>
+                <li>Pinguim</li>
+            </ul>
+        </li>
+        <li>    
+            Peixes
+            <ol>
+                <li>Atum</li>
+                <li>Carpa</li>
+                <li>Tubarão</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h2 id="lista-descrição">Lista de Descrição</h2>
+    <!-- <dl></dl> -> Lista de Descrição -->
+    <!-- <dt></dt> -> Ítem da lista de descrição -->
+    <!-- <dd></dd> -> Descrição do Ítem -->
+
+    <dl>
+        <dt>HTML</dt>
+        <dd> HTML é uma linguagem de marcação usada para contruir a estrutura de uma página web</dd>
+        <dt>CSS</dt>
+        <dd>CSS é uma linguagem de estilização aplicada para estilizar os elementos de uma página HTML</dd>
+    </dl>
+
+</body>
+</html>
