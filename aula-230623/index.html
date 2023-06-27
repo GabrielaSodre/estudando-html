@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabelas</title>
+    </head>
+
+    <body>
+        <h1>Tabelas</h1>
+        <h2>Pessoas</h2>
+        <!-- <table></table> -> estrutura de uma tabela em HTML 
+    border indica a borda, mas hoje em dia não fazemos isso na prática mais com o html e sim com o CSS-->
+        <table border="1" style="width: 100%">
+            <colgroup> <!-- ajuda a aplicar uma estilização nas colunas-->
+                <col style="width: 30%; background-color: rgb(148, 95, 197);">
+                <col style="width: 20%; background-color: rgb(207, 180, 241);"> 
+                <col style="width: 50%; background-color: rgb(174, 122, 223);">
+            </colgroup>
+            <tr>
+                <!--linha-->
+                <th>Nome</th>
+                <!--"título" da tabela-->
+                <th>Idade</th>
+                <!--cécula da tabela-->
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>27 anos</td>
+                <td>fernando@example.com</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>30 anos</td>
+                <td>bruna@example.com</td>
+            </tr>
+            <tr>
+                <!-- td*3 vai criar 3 td' -->
+                <td>Monique</td>
+                <td>25 anos</td>
+                <td>monique@example.com</td>
+            </tr>
+            <!-- tr>td*3 cria uma linha com três células -->
+            <tr>
+                <td>Gabriela</td>
+                <td>20 anos</td>
+                <td>gabriela@example.com</td>
+            </tr>
+        </table>
+        <h2>Tabuada Soma</h2>
+        <table border="1">
+            <tr>
+                <th>Operação</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>2 + 0 =</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2 + 1 =</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2 + 2 =</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2 + 3 =</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2 + 4 =</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>2 + 5 =</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2 + 6 =</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2 + 7 =</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2 + 8 =</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2 + 9 =</td>
+                <td>11</td>
+            </tr>
+        </table>
+        <h2>Times de Futebol</h2>
+        <!-- <thead></thead> Define o cabeçlho da tabela -->
+        <!-- <tbody></tbody> Define o corpo da tabela -->
+        <!-- <tfoot></tfoot> Define o rodapé da tabela -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4">Classificação times brasileirão</th>
+                    <!-- colspan quantidade de colunas que vai ocupar -->
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                    <th>Saldo de Gols</th>
+                    <th>Vitórias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fluminense</td>
+                    <td>20</td>
+                    <td>9</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Corinthians</td>
+                    <td>770</td>
+                    <td>125</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td>Flamengo</td>
+                    <td>25</td>
+                    <td>-10</td>
+                    <td rowspan="2">0</td>
+                    <!--rowspan vai mesclar as linhas-->
+                </tr>
+                <tr>
+                    <td>Palmeiras</td>
+                    <td>0</td>
+                    <td>-30</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Acesse nosso site www.brasileirao.com</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

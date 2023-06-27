@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+        <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <!-- <form></form> -> Estrutura base de um formulário HTML -->
+    <!-- <input type="text"> -> Define um campo no formulário -->
+    <!-- <button></button> -> Botão para enviar -->
+    <form>
+        Nome: 
+        <input type="text" name="nome"  placeholder="Digite seu nome completo:"><br>
+        
+        Email:
+        <input type="email" name="email" placeholder="gabriela@example.com"><br>
+        
+        Senha: 
+        <input type="password" name="senha"><br>
+        
+        Idade 
+        <input type="number" name="idade"  pattern="[0-9] {2-3}"> <br>
+        
+        Horário de Registro: 
+        <input type="time" name="horario" value="15:00"> <br>
+        
+        Data de Nascimento 
+        <input type="date" name="data" min="2023-06-26" max="2023-07-26"> <br>
+        
+        Telefone: 
+        <input type="tel" name="telefone"> <br>
+        
+        URL da Foto: 
+        <input type="url" name="url"> <br>
+        
+        Frente do RG: 
+        <input type="file" name="foto" accept=".png, .jpeg" size="50" multiple="true"> <br>
+        
+        Escolha a sua cor favorita: 
+        <input type="color" name="cor"> <br>
+        
+        Estado Civíl:
+        Solteiro(a)<input type="radio" name="estado-civil"> <br> 
+        Casado(a)<input type="radio" name="estado-civil"> <br> 
+        Divorciado(a)<input type="radio" name="estado-civil"> <br>
+        Viúvo(a)<input type="radio" name="estado-civil"> <br>  
+        
+        Aceito os termos de uso: 
+        <input type="checkbox"> <br>
+        
+        Nível de Inglês: 
+        1<input type="range" name="ingles" min="1" max="5" step="1">5 <br>
+        
+        Estado:
+        <select name="estado">
+            <option disabled selected> Selecione um Estado</option>
+            <option>Ceará</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Santa Catarina</option> 
+        </select> <br>
+        
+        Fale um pouco sobre você 
+        <textarea>Texto padrão</textarea> <br>
+        
+        <!--
+            button -> botão comum (não faz nada)
+            submit -> Submete as informações do formulário
+            reset -> limpar os campos de um formulário
+        -->
+        
+        <button type="button">Não faz nada</button>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <br>
+        <br>
+        <input type="button" value="input Não Faz Nada">
+        <input type="submit" value="input Enviar">
+        <input type="button" value="input Limpar">
+    </form>
+</body>
+</html>
+
+<!-- maxlength=" " -> limita o número maximo de caracteres -->
+<!-- minlength=" " -> limita o número mínimo de caracteres -->
+<!-- pattern="[0-9] {4,8}" -> diz que podemos usar no campo do formulário números de 0 a 9 e que o mínimo de caracteres é 4 e o máx 8 -->

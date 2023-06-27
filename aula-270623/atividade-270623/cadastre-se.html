@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+
+<body>
+    <h1>Cadastre-se</h1>
+    <form>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td>
+                    <td><input type="text" name="nome" id="nome" placeholder="Digite seu nome completo:" maxlength="200" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email" placeholder="Digite seu email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="senha">Senha:</label></td>
+                    <td><input type="password" name="senha" id="senha" placeholder="Digite sua senha" required></td>
+                </tr>    
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Dados Cadastrais</legend>
+            <table>
+                <tr>
+                    <td><label for="uf">UF:</label></td>
+                    <td><input type="text" name="uf" id="uf" placeholder="Estado onde reside" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cidade">Cidade:</label></td>
+                    <td><input type="text" name="cidade" id="cidade" placeholder="Qual a sua cidade?" required></td>
+                </tr>
+                <tr>
+                    <td><label for="rua">Rua:</label></td>
+                    <td><input type="text" name="rua" id="rua" placeholder="Digite seu endereço" required></td>
+                </tr>
+                <tr>
+                    <td><label for="numero">Número:</label></td>
+                    <td><input type="number" name="numero" id="numero" placeholder="Número da sua residência" required></td>
+                </tr>
+                <tr>
+                    <td><label for="cep">CEP:</label></td>
+                    <td><input type="text" name="cep" id="cep" placeholder="CEP da sua rua" required></td>
+                </tr>
+                <tr>
+                    <td><label for="bio">Bio:</label></td>
+                    <td><textarea placeholder="Escreva sobre você" cols="21" rows="4"></textarea required><br></td>
+                </tr>
+                <tr>
+                    <td><label for="area-de-atuacao">Área de Atuação:</label></td>
+                    <td>
+                        <select name="area-de-atuacao" id="area-de-atuacao" required>
+                            <option value="" selected disabled>Selecione uma área de atuação</option>
+                            <option value="fullstack">Full Stack</option>
+                            <option value="fullstack">Clould</option>
+                            <option value="fullstack-clould">Full Stack + Clould</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
